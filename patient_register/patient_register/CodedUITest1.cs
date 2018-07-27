@@ -25,7 +25,20 @@ namespace patient_register
         [TestMethod]
         public void CodedUITestMethod1()
         {
-            // Чтобы создать код для этого теста, выберите в контекстном меню команду "Формирование кода для кодированного теста пользовательского интерфейса", а затем выберите один из пунктов меню.
+
+            this.UIMap.regester_jornal();
+            this.UIMap.loadСheck();
+            this.UIMap.chosePacient();
+            this.UIMap.AssertChosePacient();
+            this.UIMap.clickAction();
+            this.UIMap.masterUnputassert();
+            this.UIMap.choseJMKreplay();
+            this.UIMap.AssertPacientJMK();
+            this.UIMap.closedmaster();
+            this.UIMap.choseAllFilter();
+
+
+
         }
 
         #region Дополнительные атрибуты тестирования
